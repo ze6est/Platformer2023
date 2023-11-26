@@ -172,6 +172,7 @@ MonoBehaviour:
   - {fileID: 581129059}
   - {fileID: 2095023487}
   - {fileID: 665347616}
+  _duration: 1
 --- !u!850595691 &450773148
 LightingSettings:
   m_ObjectHideFlags: 0

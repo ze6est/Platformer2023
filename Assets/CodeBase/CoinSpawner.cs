@@ -5,6 +5,7 @@ public class CoinSpawner : MonoBehaviour
 {
     [SerializeField] private Coin _coin;
     [SerializeField] private Transform[] _spawnPoints;
+    [SerializeField] private float _duration;
 
     private Coroutine _spawnCoinJob;
     private bool _isGameWorked;
@@ -20,7 +21,7 @@ public class CoinSpawner : MonoBehaviour
 
     private IEnumerator SpawnCoin()
     {
-        WaitForSeconds waitTime = new WaitForSeconds(1f);
+        WaitForSeconds waitTime = new WaitForSeconds(_duration);
 
         while (_isGameWorked)
         {
